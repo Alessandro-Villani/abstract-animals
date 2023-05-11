@@ -1,8 +1,9 @@
 package org.java.obj.classes;
 
+import org.java.interf.Swimming;
 import org.java.obj.abs.Animal;
 
-public class Cane extends Animal {
+public class Cane extends Animal implements Swimming {
 	
 
 	public Cane(String name) {
@@ -25,8 +26,16 @@ public class Cane extends Animal {
 	}
 	
 	@Override
+	public void swim() {
+		
+		System.out.println("Sono " + getName() + ", Sto nuotando");
+		
+	}
+	
+	@Override
 	public String toString() {
 		return "Sono: " + getName() + ", Mangio croccantini";
 	}
+
 
 }

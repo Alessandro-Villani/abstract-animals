@@ -28,6 +28,7 @@ public class Main {
 		
 		AnimalManager.faiVolare(a);
 		AnimalManager.faiVolare(p);
+		AnimalManager.faiNuotare(c);
 		AnimalManager.faiNuotare(d);
 		
 
