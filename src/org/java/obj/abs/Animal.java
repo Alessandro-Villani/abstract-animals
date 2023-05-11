@@ -5,7 +5,7 @@ public abstract class Animal {
 	private String name;
 	
 	public Animal(String name) {
-		
+		setName(name);
 	}
 
 	public String getName() {
@@ -20,9 +20,9 @@ public abstract class Animal {
 		System.out.println("Zzz");
 	}
 	
-	public abstract void verso();
+	public abstract void makeSound();
 	
-	public abstract void mangia();
+	public abstract void eat();
 	
 	@Override
 	public String toString() {
